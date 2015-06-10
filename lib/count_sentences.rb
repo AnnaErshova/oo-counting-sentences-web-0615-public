@@ -3,9 +3,8 @@
 
 class String
   def count_sentences
-    sentence_array = []
-    sentence_array = self.split(". ")
-    sentence_array.size # this will produce an array
+    self.split(/[(\.+)(?+)(!+)]/).size
+    # this will produce an array
   end
 end
 
